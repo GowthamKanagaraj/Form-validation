@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,500;0,600;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline:none;
+}
+
+html{
+    font-size: 16px;
+}
+body{
+    
+    background-color:  #f7d3d3;
+    height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 10px 20px 25px rgba(0,0,0,.3);
+    overflow: hidden;
+    width: 30rem;
+}
+.header{
+    border-bottom: 2px solid #706d6d;
+    background-color: #e09999;
+    padding: 20px 40px;
+}
+h1{
+    margin: 0;
+    text-align: center;
+}
+.form{
+    padding: 30px 60px;
+    margin-right: 40px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    border: 3px solid #cccccc;
+    border-radius: 5px;
+    display: block;
+    font-size: 15px;
+    padding: 15px;
+    width: 100%;
+
+}
+.form-control input:focus{
+    outline-style:dashed;
+    border-color: #e09999 ;    
+}
+.form-control.sucess input{
+    border-color:  rgb(7, 207, 133);
+}
+.form-control.error input{
+    border-color: rgb(255, 0, 0);
+}
+i{
+    visibility: hidden;
+    position: absolute;
+    top: 41px;
+    left: 250px;    
+}
+.form-control.sucess i.fa-check-circle{
+    color: rgb(7, 207, 133);
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+    color: rgb(255, 0, 0);
+    visibility: visible;
+}
+small{
+    color: rgb(255, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+.error small{
+    visibility: visible;
+}
+button{
+    background-color: #e09999;
+    color: #3a3131;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+    border: none;
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left:18px;
+}
+button:hover{
+    transform: scale(1.1) translateY(-5PX);
+}
+@media screen and (max-width: 420px){
+    .container{
+        width: 80%;
+    }
+}
+
+

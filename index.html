@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form-Validation</title>
+  <link rel="shortcut icon" href="./vecteezy_gk-logo-monogram-emblem-style-with-crown-shape-design-template_.jpg" type="image/x-icon">
+  <!--normalized css-->
+  <link rel="stylesheet" href="./normalize.css">
+  <!--custom css--> 
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+      <div class="header">
+        <h1>Creat Account</h1>
+      </div>
+
+        <form class="form" id="form">
+          <div class="form-control">
+            <label>UserName</label>
+            <input type="text" placeholder="Enter Your Name" id="username">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+          </div>
+
+          <div class="form-control">
+            <label>Email</label>
+            <input type="email" placeholder="...@email.com" id="email">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+          </div>
+
+          <div class="form-control">
+            <label>Password</label>
+            <input type="password" placeholder="Enter Password" id="password">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <label>Confirm Password</label>
+            <input type="password" placeholder="Confirm Password" id="password2">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+          </div>
+          <button>Submit</button>
+        </form>
+    </div>
+  <!--custom script-->
+  <script src="./script.js"></script>
+</body>
+</html>
